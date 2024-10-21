@@ -1,0 +1,127 @@
+/* Establece la estructura principal en dos columnas y ocupa toda la altura de la ventana */
+.login-wrapper {
+    display: flex;
+    height: 100vh;
+}
+  
+/* Configura la sección izquierda con la imagen de fondo */
+.left-side {
+    flex: 3; /* Ocupa el 50% del ancho disponible */
+    background-image: url('../../../../public-assets/img/sign.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Escala la imagen para cubrir toda el área */
+    background-position: center; /* Centra la imagen en el área */
+}
+
+/* Configura la sección derecha donde se encuentra el formulario */
+.right-side {
+    flex: 1; /* Ocupa el otro 50% del ancho disponible */
+    display: flex; /* Centra el formulario verticalmente */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    background-color:#ffffff; /* Fondo blanco para el área del formulario */
+}
+  
+/* Estilos para el formulario de inicio de sesión */
+.login-form {
+    background-color:#ffffff; /* Fondo blanco para el formulario */
+    padding: 2rem; /* Espaciado interno del formulario */
+    border-radius: 8px; /* Bordes redondeados */
+    max-width: 300px; /* Reduce el ancho máximo del formulario para hacerlo más estrecho */
+    width: 100%; /* Asegura que el formulario ocupe todo el ancho disponible dentro del límite máximo */
+    text-align: center; /* Centra el texto del formulario */
+}
+
+/* Estilo para el título del formulario */
+.login-form h2 {
+    margin-bottom: 1.5rem; /* Espaciado inferior del título */
+}
+
+/* Estilo para los contenedores de los campos del formulario */
+.form-group {
+    margin-bottom: 1rem; /* Espaciado inferior entre campos */
+}
+
+/* Estilo para los campos de entrada de texto */
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* El campo de entrada ocupa todo el ancho del formulario */
+    padding: 0.75rem; /* Espaciado interno del campo */
+    margin: 0.5rem 0; /* Espaciado vertical */
+    border: 1px solid #ccc; /* Borde del campo */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilos para el botón "Ingresar" */
+.login-button {
+    width: 40%; /* Ocupa el ancho completo del formulario */
+    padding: 0.75rem; /* Espaciado interno */
+    background-color:  #48c94c; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por el botón */
+    margin-bottom: 0.5rem; /* Espaciado inferior para separación */
+}
+
+/* Estilos para el botón "Se te olvidó tu contraseña" */
+.reset-button {
+    width: 80%; /* Ancho más pequeño */
+    padding: 0.5rem; /* Espaciado interno */
+    background-color: #ffffff; /* Fondo blanco */
+    color: black;
+    border: 1px solid #313233; /* Borde en color azul */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por el botón */
+    margin: 0 auto 0.5rem auto; /* Centrado horizontal */
+}
+
+/* Estilos para el botón "Registra tu comercio" */
+.sign-button {
+    width: 80%; /* Ancho más pequeño */
+    padding: 0.5rem; /* Espaciado interno */
+    background-color: #48c94c; /* Fondo verde */
+    color: #fff; /* Texto en color blanco */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por el botón */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+/* Cambia el color de fondo del botón al pasar el cursor */
+.login-button:hover {
+    background-color: #4caf50
+
+    
+}
+
+.reset-button:hover {
+    background-color: #f0f0f0;
+  
+}
+
+.sign-button:hover {
+    background-color: #4caf50
+}
+
+/* Ajusta el contenedor de los botones */
+.form-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* Estilos para los enlaces de "Olvidó su contraseña" y "Registrar" */
+.forgot-password,
+.register-link {
+    display: block; /* Los enlaces ocupan todo el ancho disponible */
+    margin-top: 1rem; /* Espaciado superior */
+    color: #007bff; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* Ajusta el espaciado superior para el enlace de registro */
+.register-link {
+    margin-top: 0.5rem;
+}
